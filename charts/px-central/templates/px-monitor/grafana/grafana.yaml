@@ -20,6 +20,7 @@ data:
     {{- (.Files.Glob "files/portworx-node-dashboard.json").AsConfig | nindent 2 }}
     {{- (.Files.Glob "files/portworx-volume-dashboard.json").AsConfig | nindent 2 }}
     {{- (.Files.Glob "files/portworx-etcd-dashboard.json").AsConfig | nindent 2 }}
+    {{- (.Files.Glob "files/portworx-perf-dashboard.json").AsConfig | nindent 2 }}
     {{- (.Files.Glob "files/portworx-backup-dashboard.json").AsConfig | nindent 2 }}
 ---
 kind: ConfigMap
